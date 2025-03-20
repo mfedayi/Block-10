@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7ebeb;
+}
+/* Square container */
+.container {
+  width: 380px;
+  height: 380px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.div-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+.red {
+  background-color: red;
+}
+li:nth-child(odd) {
+  background-color: fuchsia;
+}
+li:nth-child(2) {
+  background-color: aliceblue;
+}
+h1 {
+  color: #333;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  font-size: large;
+}

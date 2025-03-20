@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80vw;
+  margin: 10vh auto !important;
+  background-color: goldenrod;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 320px;
+}
+
+.div-flex {
+  height: 100px;
+  width: 100px;
+}
+
+.rect {
+  background-color: rgb(99, 43, 43);
+  height: 700px;
+  width: 620px;
+  z-index: 9;
+}
+
+.triangle {
+  background-color: rgb(99, 43, 43);
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 680px solid #ffbf00;
+  z-index: 10;
+}
+
+.circle {
+  background-color: rgb(52, 3, 3);
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  z-index: 18;
+}
+
+.rect,
+.circle,
+.triangle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.imgOne {
+  z-index: 1;
+}
+
+.imgTwo {
+  z-index: 40;
+}
+
+a:hover {
+  background-color: brown;
+}
+
+@media screen and (max-width: 480px) {
+  .rect {
+    width: 100%;
+    height: 500px;
+  }
+}
